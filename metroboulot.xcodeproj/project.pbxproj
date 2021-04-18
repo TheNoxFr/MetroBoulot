@@ -52,6 +52,7 @@
 		1BBE0DD2262CA8B3009719C7 /* metroboulot */ = {
 			isa = PBXGroup;
 			children = (
+				1BBE0DE3262CA9DE009719C7 /* Models */,
 				1BBE0DD3262CA8B3009719C7 /* metroboulotApp.swift */,
 				1BBE0DD5262CA8B3009719C7 /* ContentView.swift */,
 				1BBE0DD7262CA8B4009719C7 /* Assets.xcassets */,
@@ -67,6 +68,13 @@
 				1BBE0DDA262CA8B4009719C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1BBE0DE3262CA9DE009719C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
