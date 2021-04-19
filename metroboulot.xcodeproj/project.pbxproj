@@ -11,6 +11,9 @@
 		1BBE0DD6262CA8B3009719C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DD5262CA8B3009719C7 /* ContentView.swift */; };
 		1BBE0DD8262CA8B4009719C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DD7262CA8B4009719C7 /* Assets.xcassets */; };
 		1BBE0DDB262CA8B4009719C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DDA262CA8B4009719C7 /* Preview Assets.xcassets */; };
+		1BBE0DE6262D9AC9009719C7 /* Ratp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DE5262D9AC9009719C7 /* Ratp.swift */; };
+		1BBE0DE9262DE707009719C7 /* AllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DE8262DE707009719C7 /* AllerView.swift */; };
+		1BBE0DEC262DE724009719C7 /* RetourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DEB262DE724009719C7 /* RetourView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		1BBE0DD7262CA8B4009719C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BBE0DDA262CA8B4009719C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BBE0DDC262CA8B4009719C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BBE0DE5262D9AC9009719C7 /* Ratp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratp.swift; sourceTree = "<group>"; };
+		1BBE0DE8262DE707009719C7 /* AllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllerView.swift; sourceTree = "<group>"; };
+		1BBE0DEB262DE724009719C7 /* RetourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetourView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 				1BBE0DD7262CA8B4009719C7 /* Assets.xcassets */,
 				1BBE0DDC262CA8B4009719C7 /* Info.plist */,
 				1BBE0DD9262CA8B4009719C7 /* Preview Content */,
+				1BBE0DE8262DE707009719C7 /* AllerView.swift */,
+				1BBE0DEB262DE724009719C7 /* RetourView.swift */,
 			);
 			path = metroboulot;
 			sourceTree = "<group>";
@@ -73,6 +81,7 @@
 		1BBE0DE3262CA9DE009719C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1BBE0DE5262D9AC9009719C7 /* Ratp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BBE0DEC262DE724009719C7 /* RetourView.swift in Sources */,
+				1BBE0DE6262D9AC9009719C7 /* Ratp.swift in Sources */,
+				1BBE0DE9262DE707009719C7 /* AllerView.swift in Sources */,
 				1BBE0DD6262CA8B3009719C7 /* ContentView.swift in Sources */,
 				1BBE0DD4262CA8B3009719C7 /* metroboulotApp.swift in Sources */,
 			);
