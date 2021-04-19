@@ -32,12 +32,37 @@ struct AllerView: View {
     }
     var body: some View {
         VStack {
-            ForEach(scheds96) { sched in
-                Text("Attente : \(sched.message)")
-                Text("Destination : \(sched.destination)")
+            Image("Bus96")
+            List {
+                HStack {
+                    Text("Terminus")
+                        .font(.headline)
+                    Spacer()
+                    Text("Temps d'attente")
+                        .font(.headline)
+                }
+                ForEach(scheds96) { sched in
+                    HStack {
+                        Text("\(sched.destination)")
+                        Spacer()
+                        Text("\(sched.message)")
+                            .foregroundColor(Color.yellow)
+                            .padding(.all)
+                            .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
+                    }
+                }
             }
+            .padding()
+            .onAppear(perform: loadData)
+            Button(action: {
+                loadData()
+            }) {
+                Image(systemName: "arrow.2.circlepath")
+                    .resizable()
+            }
+            .frame(width: 80, height: 80)
+            .padding()
         }
-        .onAppear(perform: loadData)
     }
 }
 

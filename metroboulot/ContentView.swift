@@ -26,7 +26,14 @@ struct ContentView: View {
         }
         .padding()
         .onAppear() {
-            tabSelection = 1
+            let now = Date()
+            let calendar = Calendar.current
+            let hour = calendar.component(.hour, from: now)
+            if hour >= 23 {
+                tabSelection = 2
+            } else {
+                tabSelection = 1
+            }
         }
     }
 }

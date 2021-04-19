@@ -13,8 +13,8 @@ struct Ratp: Decodable {
 
 extension Ratp {
     static var data: Ratp {
-        Ratp(result: Result(schedules: [Schedule(message: "...", destination: "..."),
-        Schedule(message: "...", destination: "...")]))
+        Ratp(result: Result(schedules: [Schedule(message: "1 mn", destination: "Gare Montparnasse"),
+        Schedule(message: "2 mn", destination: "Gare Montparnasse")]))
     }
 }
 
