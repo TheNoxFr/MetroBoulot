@@ -15,6 +15,10 @@
 		1BBE0DE9262DE707009719C7 /* AllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DE8262DE707009719C7 /* AllerView.swift */; };
 		1BBE0DEC262DE724009719C7 /* RetourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DEB262DE724009719C7 /* RetourView.swift */; };
 		1BBE0DFA262E1F58009719C7 /* 96genrvb.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DF9262E1F58009719C7 /* 96genrvb.svg */; };
+		1BBE0DFE262EC644009719C7 /* m4genrvb.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DFC262EC644009719C7 /* m4genrvb.svg */; };
+		1BBE0DFF262EC644009719C7 /* m11genrvb.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DFD262EC644009719C7 /* m11genrvb.svg */; };
+		1BBE0E02262ED347009719C7 /* logo_metroboulot.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0E01262ED347009719C7 /* logo_metroboulot.png */; };
+		1BBE0E06262ED6F6009719C7 /* logo_metroboulot_appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0E05262ED6F6009719C7 /* logo_metroboulot_appstore.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		1BBE0DE8262DE707009719C7 /* AllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllerView.swift; sourceTree = "<group>"; };
 		1BBE0DEB262DE724009719C7 /* RetourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetourView.swift; sourceTree = "<group>"; };
 		1BBE0DF9262E1F58009719C7 /* 96genrvb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 96genrvb.svg; sourceTree = "<group>"; };
+		1BBE0DFC262EC644009719C7 /* m4genrvb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = m4genrvb.svg; sourceTree = "<group>"; };
+		1BBE0DFD262EC644009719C7 /* m11genrvb.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = m11genrvb.svg; sourceTree = "<group>"; };
+		1BBE0E01262ED347009719C7 /* logo_metroboulot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_metroboulot.png; sourceTree = "<group>"; };
+		1BBE0E05262ED6F6009719C7 /* logo_metroboulot_appstore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_metroboulot_appstore.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,10 @@
 		1BBE0DF3262E12EE009719C7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1BBE0E05262ED6F6009719C7 /* logo_metroboulot_appstore.png */,
+				1BBE0E01262ED347009719C7 /* logo_metroboulot.png */,
+				1BBE0DFC262EC644009719C7 /* m4genrvb.svg */,
+				1BBE0DFD262EC644009719C7 /* m11genrvb.svg */,
 				1BBE0DF9262E1F58009719C7 /* 96genrvb.svg */,
 			);
 			path = Resources;
@@ -154,9 +166,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BBE0E06262ED6F6009719C7 /* logo_metroboulot_appstore.png in Resources */,
+				1BBE0DFF262EC644009719C7 /* m11genrvb.svg in Resources */,
+				1BBE0E02262ED347009719C7 /* logo_metroboulot.png in Resources */,
 				1BBE0DFA262E1F58009719C7 /* 96genrvb.svg in Resources */,
 				1BBE0DDB262CA8B4009719C7 /* Preview Assets.xcassets in Resources */,
 				1BBE0DD8262CA8B4009719C7 /* Assets.xcassets in Resources */,
+				1BBE0DFE262EC644009719C7 /* m4genrvb.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
