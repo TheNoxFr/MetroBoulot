@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B47E167273D43C5007D4336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B47E166273D43C5007D4336 /* Assets.xcassets */; };
+		1B47E16D273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1B47E16C273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1B47E174273D43C5007D4336 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47E173273D43C5007D4336 /* ContentView.swift */; };
+		1B47E176273D43C5007D4336 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47E175273D43C5007D4336 /* NotificationController.swift */; };
+		1B47E178273D43C5007D4336 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47E177273D43C5007D4336 /* NotificationView.swift */; };
+		1B47E17A273D43C5007D4336 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47E179273D43C5007D4336 /* ComplicationController.swift */; };
+		1B47E17C273D43C6007D4336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B47E17B273D43C6007D4336 /* Assets.xcassets */; };
+		1B47E17F273D43C6007D4336 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B47E17E273D43C6007D4336 /* Preview Assets.xcassets */; };
+		1B47E184273D43C6007D4336 /* WatchMetroBoulot.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1B47E164273D43C4007D4336 /* WatchMetroBoulot.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1B47E18D273D6201007D4336 /* logo_metroboulot_appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0E05262ED6F6009719C7 /* logo_metroboulot_appstore.png */; };
+		1B47E18E273D6201007D4336 /* m4genrvb.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DFC262EC644009719C7 /* m4genrvb.svg */; };
+		1B47E18F273D6201007D4336 /* Ratp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DE5262D9AC9009719C7 /* Ratp.swift */; };
+		1B47E190273D6201007D4336 /* m11genrvb.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DFD262EC644009719C7 /* m11genrvb.svg */; };
+		1B47E191273D6201007D4336 /* logo_metroboulot.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0E01262ED347009719C7 /* logo_metroboulot.png */; };
+		1B47E192273D6201007D4336 /* metroboulotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DD3262CA8B3009719C7 /* metroboulotApp.swift */; };
+		1B47E193273D6201007D4336 /* 96genrvb.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DF9262E1F58009719C7 /* 96genrvb.svg */; };
+		1B47E195273D8AD5007D4336 /* AllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47E194273D8AD5007D4336 /* AllerView.swift */; };
+		1B47E197273D8AEA007D4336 /* RetourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47E196273D8AEA007D4336 /* RetourView.swift */; };
 		1BBE0DD4262CA8B3009719C7 /* metroboulotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DD3262CA8B3009719C7 /* metroboulotApp.swift */; };
 		1BBE0DD6262CA8B3009719C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBE0DD5262CA8B3009719C7 /* ContentView.swift */; };
 		1BBE0DD8262CA8B4009719C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0DD7262CA8B4009719C7 /* Assets.xcassets */; };
@@ -21,7 +39,62 @@
 		1BBE0E06262ED6F6009719C7 /* logo_metroboulot_appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BBE0E05262ED6F6009719C7 /* logo_metroboulot_appstore.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1B47E16E273D43C5007D4336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BBE0DC8262CA8B3009719C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B47E16B273D43C5007D4336;
+			remoteInfo = "WatchMetroBoulot WatchKit Extension";
+		};
+		1B47E182273D43C6007D4336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BBE0DC8262CA8B3009719C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B47E163273D43C4007D4336;
+			remoteInfo = WatchMetroBoulot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1B47E185273D43C6007D4336 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1B47E184273D43C6007D4336 /* WatchMetroBoulot.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B47E188273D43C6007D4336 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1B47E16D273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1B47E164273D43C4007D4336 /* WatchMetroBoulot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMetroBoulot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B47E166273D43C5007D4336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B47E16C273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchMetroBoulot WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B47E173273D43C5007D4336 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B47E175273D43C5007D4336 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		1B47E177273D43C5007D4336 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		1B47E179273D43C5007D4336 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1B47E17B273D43C6007D4336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B47E17E273D43C6007D4336 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B47E180273D43C6007D4336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B47E181273D43C6007D4336 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		1B47E194273D8AD5007D4336 /* AllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllerView.swift; sourceTree = "<group>"; };
+		1B47E196273D8AEA007D4336 /* RetourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetourView.swift; sourceTree = "<group>"; };
 		1BBE0DD0262CA8B3009719C7 /* metroboulot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metroboulot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBE0DD3262CA8B3009719C7 /* metroboulotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metroboulotApp.swift; sourceTree = "<group>"; };
 		1BBE0DD5262CA8B3009719C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +112,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B47E169273D43C5007D4336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BBE0DCD262CA8B3009719C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +129,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B47E165273D43C4007D4336 /* WatchMetroBoulot */ = {
+			isa = PBXGroup;
+			children = (
+				1B47E166273D43C5007D4336 /* Assets.xcassets */,
+			);
+			path = WatchMetroBoulot;
+			sourceTree = "<group>";
+		};
+		1B47E170273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B47E173273D43C5007D4336 /* ContentView.swift */,
+				1B47E194273D8AD5007D4336 /* AllerView.swift */,
+				1B47E196273D8AEA007D4336 /* RetourView.swift */,
+				1B47E175273D43C5007D4336 /* NotificationController.swift */,
+				1B47E177273D43C5007D4336 /* NotificationView.swift */,
+				1B47E179273D43C5007D4336 /* ComplicationController.swift */,
+				1B47E17B273D43C6007D4336 /* Assets.xcassets */,
+				1B47E180273D43C6007D4336 /* Info.plist */,
+				1B47E181273D43C6007D4336 /* PushNotificationPayload.apns */,
+				1B47E17D273D43C6007D4336 /* Preview Content */,
+			);
+			path = "WatchMetroBoulot WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1B47E17D273D43C6007D4336 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1B47E17E273D43C6007D4336 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		1BBE0DC7262CA8B3009719C7 = {
 			isa = PBXGroup;
 			children = (
 				1BBE0DD2262CA8B3009719C7 /* metroboulot */,
+				1B47E165273D43C4007D4336 /* WatchMetroBoulot */,
+				1B47E170273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension */,
 				1BBE0DD1262CA8B3009719C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				1BBE0DD0262CA8B3009719C7 /* metroboulot.app */,
+				1B47E164273D43C4007D4336 /* WatchMetroBoulot.app */,
+				1B47E16C273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +229,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1B47E163273D43C4007D4336 /* WatchMetroBoulot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B47E18C273D43C6007D4336 /* Build configuration list for PBXNativeTarget "WatchMetroBoulot" */;
+			buildPhases = (
+				1B47E162273D43C4007D4336 /* Resources */,
+				1B47E188273D43C6007D4336 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B47E16F273D43C5007D4336 /* PBXTargetDependency */,
+			);
+			name = WatchMetroBoulot;
+			productName = WatchMetroBoulot;
+			productReference = 1B47E164273D43C4007D4336 /* WatchMetroBoulot.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1B47E16B273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B47E18B273D43C6007D4336 /* Build configuration list for PBXNativeTarget "WatchMetroBoulot WatchKit Extension" */;
+			buildPhases = (
+				1B47E168273D43C5007D4336 /* Sources */,
+				1B47E169273D43C5007D4336 /* Frameworks */,
+				1B47E16A273D43C5007D4336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchMetroBoulot WatchKit Extension";
+			productName = "WatchMetroBoulot WatchKit Extension";
+			productReference = 1B47E16C273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		1BBE0DCF262CA8B3009719C7 /* metroboulot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BBE0DDF262CA8B4009719C7 /* Build configuration list for PBXNativeTarget "metroboulot" */;
@@ -119,10 +270,12 @@
 				1BBE0DCC262CA8B3009719C7 /* Sources */,
 				1BBE0DCD262CA8B3009719C7 /* Frameworks */,
 				1BBE0DCE262CA8B3009719C7 /* Resources */,
+				1B47E185273D43C6007D4336 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1B47E183273D43C6007D4336 /* PBXTargetDependency */,
 			);
 			name = metroboulot;
 			productName = metroboulot;
@@ -135,9 +288,15 @@
 		1BBE0DC8262CA8B3009719C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					1B47E163273D43C4007D4336 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					1B47E16B273D43C5007D4336 = {
+						CreatedOnToolsVersion = 13.1;
+					};
 					1BBE0DCF262CA8B3009719C7 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -157,11 +316,35 @@
 			projectRoot = "";
 			targets = (
 				1BBE0DCF262CA8B3009719C7 /* metroboulot */,
+				1B47E163273D43C4007D4336 /* WatchMetroBoulot */,
+				1B47E16B273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1B47E162273D43C4007D4336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B47E167273D43C5007D4336 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B47E16A273D43C5007D4336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B47E190273D6201007D4336 /* m11genrvb.svg in Resources */,
+				1B47E191273D6201007D4336 /* logo_metroboulot.png in Resources */,
+				1B47E17F273D43C6007D4336 /* Preview Assets.xcassets in Resources */,
+				1B47E18D273D6201007D4336 /* logo_metroboulot_appstore.png in Resources */,
+				1B47E17C273D43C6007D4336 /* Assets.xcassets in Resources */,
+				1B47E18E273D6201007D4336 /* m4genrvb.svg in Resources */,
+				1B47E193273D6201007D4336 /* 96genrvb.svg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BBE0DCE262CA8B3009719C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +362,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1B47E168273D43C5007D4336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B47E195273D8AD5007D4336 /* AllerView.swift in Sources */,
+				1B47E176273D43C5007D4336 /* NotificationController.swift in Sources */,
+				1B47E174273D43C5007D4336 /* ContentView.swift in Sources */,
+				1B47E192273D6201007D4336 /* metroboulotApp.swift in Sources */,
+				1B47E17A273D43C5007D4336 /* ComplicationController.swift in Sources */,
+				1B47E18F273D6201007D4336 /* Ratp.swift in Sources */,
+				1B47E178273D43C5007D4336 /* NotificationView.swift in Sources */,
+				1B47E197273D8AEA007D4336 /* RetourView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1BBE0DCC262CA8B3009719C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,7 +391,142 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1B47E16F273D43C5007D4336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B47E16B273D43C5007D4336 /* WatchMetroBoulot WatchKit Extension */;
+			targetProxy = 1B47E16E273D43C5007D4336 /* PBXContainerItemProxy */;
+		};
+		1B47E183273D43C6007D4336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B47E163273D43C4007D4336 /* WatchMetroBoulot */;
+			targetProxy = 1B47E182273D43C6007D4336 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1B47E186273D43C6007D4336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPF92MJ97Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchMetroBoulot_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchMetroBoulot;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.thenox.metroboulot;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.thenox.metroboulot.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		1B47E187273D43C6007D4336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPF92MJ97Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WatchMetroBoulot_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchMetroBoulot;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = fr.thenox.metroboulot;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.thenox.metroboulot.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		1B47E189273D43C6007D4336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchMetroBoulot WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MPF92MJ97Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchMetroBoulot WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchMetroBoulot WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchMetroBoulot_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.thenox.metroboulot.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		1B47E18A273D43C6007D4336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchMetroBoulot WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = MPF92MJ97Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchMetroBoulot WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchMetroBoulot WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = WatchMetroBoulot_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.thenox.metroboulot.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 		1BBE0DDD262CA8B4009719C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,7 +648,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"metroboulot/Preview Content\"";
 				DEVELOPMENT_TEAM = MPF92MJ97Q;
 				ENABLE_PREVIEWS = YES;
@@ -327,6 +661,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.thenox.metroboulot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Registered Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -337,7 +672,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"metroboulot/Preview Content\"";
 				DEVELOPMENT_TEAM = MPF92MJ97Q;
 				ENABLE_PREVIEWS = YES;
@@ -349,6 +685,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.thenox.metroboulot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev Registered Provisioning Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -357,6 +694,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1B47E18B273D43C6007D4336 /* Build configuration list for PBXNativeTarget "WatchMetroBoulot WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B47E189273D43C6007D4336 /* Debug */,
+				1B47E18A273D43C6007D4336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B47E18C273D43C6007D4336 /* Build configuration list for PBXNativeTarget "WatchMetroBoulot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B47E186273D43C6007D4336 /* Debug */,
+				1B47E187273D43C6007D4336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1BBE0DCB262CA8B3009719C7 /* Build configuration list for PBXProject "metroboulot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

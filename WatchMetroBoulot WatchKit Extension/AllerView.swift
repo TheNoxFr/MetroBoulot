@@ -1,8 +1,8 @@
 //
 //  AllerView.swift
-//  metroboulot
+//  WatchMetroBoulot WatchKit Extension
 //
-//  Created by Bruno Deguil on 19/04/2021.
+//  Created by Bruno Deguil on 11/11/2021.
 //
 
 import SwiftUI
@@ -33,36 +33,20 @@ struct AllerView: View {
     var body: some View {
         VStack {
             Image("Bus96")
-            List {
+                .resizable()
+            ForEach(scheds96) { sched in
                 HStack {
-                    Text("Terminus")
-                        .font(.headline)
+                    Text("\(String(sched.destination.prefix(4)))")
                     Spacer()
-                    Text("Temps d'attente")
+                    Text("\(sched.message)")
                         .font(.headline)
-                }
-                ForEach(scheds96) { sched in
-                    HStack {
-                        Text("\(sched.destination)")
-                        Spacer()
-                        Text("\(sched.message)")
-                            .font(.headline)
-                            .foregroundColor(Color.yellow)
-                            .padding(.all)
-                            .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
-                    }
+                        .foregroundColor(Color.yellow)
+                        .padding(.all)
+                        .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
                 }
             }
             .padding()
             .onAppear(perform: loadData)
-            Button(action: {
-                loadData()
-            }) {
-                Image(systemName: "arrow.2.circlepath")
-                    .resizable()
-            }
-            .frame(width: 60, height: 60)
-            .padding()
         }
     }
 }
