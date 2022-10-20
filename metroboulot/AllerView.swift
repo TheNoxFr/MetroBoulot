@@ -8,19 +8,43 @@
 import SwiftUI
 
 struct AllerView: View {
-    @State private var scheds96: [Schedule] = Ratp.data.result.schedules
+    @ObservedObject var viewModel: ViewModel
     
+    //@State private var scheds96: [Schedule] = Ratp.data.result.schedules
+    //[StopMonitoringDeliveryResponse] = Stif.data.Siri.ServiceDelivery.StopMonitoringDelivery
+    /*
     func loadData() {
-        guard let url = URL(string: "https://api-ratp.pierre-grimaud.fr/v4/schedules/buses/96/Maison+des+metallos/R") else {
+        guard let url = URL(string: "https://aaaaprim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF%3AStopPoint%3AQ%3A37590%3A") else {
                 print("Invalid URL")
             return
         }
-        let request = URLRequest(url: url)
+        var request = URLRequest(url: url)
+        request.setValue("35GWLKumxE84rKWmf12XWQ9h4SlGL2Kc", forHTTPHeaderField: "apikey")
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
-                if let decodedResponse = try? JSONDecoder().decode(Ratp.self, from: data) {
+                if let decodedResponse = try? JSONDecoder().decode(Stif.self, from: data) {
                     DispatchQueue.main.async {
-                        self.scheds96 = decodedResponse.result.schedules
+                        let dateFormaterResponse = DateFormatter()
+                        dateFormaterResponse.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                        let dateFormaterPassage = DateFormatter()
+                        dateFormaterPassage.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                        
+                        let responseTimestamp = dateFormaterResponse.date(from:  decodedResponse.Siri.ServiceDelivery.ResponseTimestamp)
+                        let monitoredStopVisit = decodedResponse.Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit
+                        
+                        let dest1 = monitoredStopVisit[0].MonitoredVehicleJourney.MonitoredCall.DestinationDisplay[0].value
+                        
+                        let time1 = dateFormaterPassage.date(from:  monitoredStopVisit[0].MonitoredVehicleJourney.MonitoredCall.ExpectedDepartureTime)
+                        
+                        let attente1 = time1!.timeIntervalSince(responseTimestamp!)
+                        
+                        let dest2 = monitoredStopVisit[1].MonitoredVehicleJourney.MonitoredCall.DestinationDisplay[0].value
+                        
+                        let time2 = dateFormaterPassage.date(from:  monitoredStopVisit[1].MonitoredVehicleJourney.MonitoredCall.ExpectedDepartureTime)
+                        let attente2 = time2!.timeIntervalSince(responseTimestamp!)
+                        
+                        self.scheds96 = [Schedule(message: String(Int(attente1/60)), destination: dest1), Schedule(message: String(Int(attente2/60)), destination: dest2)]
+                        //self.scheds96 = decodedResponse.Siri.ServiceDelivery.StopMonitoringDelivery
                     }
                     return
                 }
@@ -30,6 +54,7 @@ struct AllerView: View {
         }.resume()
         
     }
+    */
     var body: some View {
         VStack {
             Image("Bus96")
@@ -41,11 +66,12 @@ struct AllerView: View {
                     Text("Temps d'attente")
                         .font(.headline)
                 }
-                ForEach(scheds96) { sched in
+                
+                ForEach(viewModel.scheds96) { sched in
                     HStack {
                         Text("\(sched.destination)")
                         Spacer()
-                        Text("\(sched.message)")
+                        Text("\(sched.message) min")
                             .font(.headline)
                             .foregroundColor(Color.yellow)
                             .padding(.all)
@@ -54,9 +80,9 @@ struct AllerView: View {
                 }
             }
             .padding()
-            .onAppear(perform: loadData)
+            .onAppear(perform: {viewModel.load(line: "96")})
             Button(action: {
-                loadData()
+                viewModel.load(line: "96")
             }) {
                 Image(systemName: "arrow.2.circlepath")
                     .resizable()
@@ -69,6 +95,6 @@ struct AllerView: View {
 
 struct AllerView_Previews: PreviewProvider {
     static var previews: some View {
-        AllerView()
+        AllerView(viewModel: ViewModel.init())
     }
 }

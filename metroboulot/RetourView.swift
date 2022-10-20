@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct RetourView: View {
-    @State private var scheds4: [Schedule] = Ratp.data.result.schedules
-    @State private var scheds11: [Schedule] = Ratp.data.result.schedules
+    @ObservedObject var viewModel: ViewModel
     
+    //@State private var scheds4: [Schedule] = Ratp.data.result.schedules
+    //@State private var scheds11: [Schedule] = Ratp.data.result.schedules
+  /*
     func loadData() {
         guard let url4 = URL(string: "https://api-ratp.pierre-grimaud.fr/v4/schedules/metros/4/montparnasse+bienvenue/R") else {
                 print("Invalid URL")
@@ -48,7 +50,7 @@ struct RetourView: View {
             }
         }.resume()
     }
-    
+ */
     var body: some View {
         VStack {
             Image("Metro4")
@@ -62,7 +64,7 @@ struct RetourView: View {
                     Text("Temps d'attente")
                         .font(.headline)
                 }
-                ForEach(scheds4) { sched in
+                ForEach(viewModel.scheds4) { sched in
                     HStack {
                         Text("\(sched.destination)")
                         Spacer()
@@ -85,7 +87,7 @@ struct RetourView: View {
                     Text("Temps d'attente")
                         .font(.headline)
                 }
-                ForEach(scheds11) { sched in
+                ForEach(viewModel.scheds11) { sched in
                     HStack {
                         Text("\(sched.destination)")
                         Spacer()
@@ -99,7 +101,8 @@ struct RetourView: View {
             .padding()
             
             Button(action: {
-                loadData()
+                viewModel.load(line: "4")
+                viewModel.load(line: "11")
             }) {
                 Image(systemName: "arrow.2.circlepath")
                     .resizable()
@@ -108,13 +111,14 @@ struct RetourView: View {
             .padding()
         }
         .onAppear() {
-            loadData()
+            viewModel.load(line: "4")
+            viewModel.load(line: "11")
         }
     }
 }
 
 struct RetourView_Previews: PreviewProvider {
     static var previews: some View {
-        RetourView()
+        RetourView(viewModel: ViewModel.init())
     }
 }

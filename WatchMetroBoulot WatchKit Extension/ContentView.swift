@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel: ViewModel
     @State private var tabSelection = 1
     // 96 : https://api-ratp.pierre-grimaud.fr/v4/schedules/buses/96/Maison%20des%20m%C3%A9tallos/R
     //  4 : https://api-ratp.pierre-grimaud.fr/v4/schedules/metros/4/montparnasse+bienvenue//R
@@ -30,7 +31,7 @@ struct ContentView: View {
             let now = Date()
             let calendar = Calendar.current
             let hour = calendar.component(.hour, from: now)
-            if hour >= 21 {
+            if hour >= 23 {
                 tabSelection = 2
             } else {
                 tabSelection = 1
@@ -41,6 +42,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: ViewModel.init())
     }
 }
