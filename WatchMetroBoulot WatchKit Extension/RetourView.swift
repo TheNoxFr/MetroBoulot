@@ -12,38 +12,54 @@ struct RetourView: View {
     
     var body: some View {
         VStack {
-            Image("Metro4")
-                .resizable()
-                .frame(width: 16, height: 16)
-            List {
-                ForEach(viewModel.scheds4) { sched in
-                    HStack {
-                        Text("\(String(sched.destination.prefix(5)))")
-                        Spacer()
-                        Text("\(String(sched.message.prefix(10)))")
-                            .foregroundColor(Color.yellow)
-                            .padding(.all)
-                            .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
+            HStack {
+                Image("Metro4")
+                    .resizable()
+                    .frame(width: 16, height: 16)
+                List {
+                    ForEach(viewModel.scheds4) { sched in
+                        HStack {
+                            Text("\(String(sched.destination.prefix(5)))")
+                                .frame(height: 12)
+                            Spacer()
+                                .frame(height: 12)
+                            Text("\(String(sched.message.prefix(10)))")
+                                .foregroundColor(Color.yellow)
+                                .padding(.all)
+                                .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
+                                .frame(height: 12)
+                        }
+                        .padding()
                     }
                 }
+                .environment(\.defaultMinListRowHeight, 10)
+                .listStyle(PlainListStyle())
+                //.padding()
             }
-            .padding()
-            Image("Metro11")
-                .resizable()
-                .frame(width: 16, height: 16)
-            List {
-                ForEach(viewModel.scheds11) { sched in
-                    HStack {
-                        Text("\(String(sched.destination.prefix(5)))")
-                        Spacer()
-                        Text("\(String(sched.message.prefix(10)))")
-                            .foregroundColor(Color.yellow)
-                            .padding(.all)
-                            .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
+            HStack {
+                Image("Metro11")
+                    .resizable()
+                    .frame(width: 16, height: 16)
+                List {
+                    ForEach(viewModel.scheds11) { sched in
+                        HStack {
+                            Text("\(String(sched.destination.prefix(5)))")
+                                .frame(height: 12)
+                            Spacer()
+                                .frame(height: 12)
+                            Text("\(String(sched.message.prefix(6)))")
+                                .foregroundColor(Color.yellow)
+                                .padding(.all)
+                                .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
+                                .frame(height: 12)
+                        }
+                        .padding()
                     }
                 }
+                .environment(\.defaultMinListRowHeight, 10)
+                .listStyle(PlainListStyle())
+                //.padding()
             }
-            .padding()
         }
         .onAppear() {
             viewModel.load(line: "4")

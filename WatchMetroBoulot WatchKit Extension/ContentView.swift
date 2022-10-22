@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel: ViewModel
+    @Environment(\.scenePhase) var scenePhase
     @State private var tabSelection = 1
     // 96 : https://api-ratp.pierre-grimaud.fr/v4/schedules/buses/96/Maison%20des%20m%C3%A9tallos/R
     //  4 : https://api-ratp.pierre-grimaud.fr/v4/schedules/metros/4/montparnasse+bienvenue//R
@@ -17,12 +18,12 @@ struct ContentView: View {
         TabView (selection: $tabSelection) {
             AllerView(viewModel: viewModel)
                 .tabItem {
-                    Label("Aller", systemImage: "car")
+                    //Label("Aller", systemImage: "car")
                 }
                 .tag(1)
             RetourView(viewModel: viewModel)
                 .tabItem {
-                    Label("Retour", systemImage: "tram")
+                    //Label("Retour", systemImage: "tram")
                 }
                 .tag(2)
         }
@@ -35,6 +36,18 @@ struct ContentView: View {
                 tabSelection = 2
             } else {
                 tabSelection = 1
+            }
+        }
+        .onChange(of: scenePhase) { newPhase in
+            if newPhase == .active {
+                let now = Date()
+                let calendar = Calendar.current
+                let hour = calendar.component(.hour, from: now)
+                if hour >= 13 {
+                    tabSelection = 2
+                } else {
+                    tabSelection = 1
+                }
             }
         }
     }
