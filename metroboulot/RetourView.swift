@@ -14,7 +14,7 @@ struct RetourView: View {
         VStack {
             Image("Metro4")
                 .resizable()
-                .frame(width: 40, height: 40)
+                .frame(width: 35, height: 35)
             List {
                 HStack {
                     Text("Terminus")
@@ -34,31 +34,36 @@ struct RetourView: View {
                     }
                 }
             }
-            .padding()
-            Image("Metro11")
-                .resizable()
-                .frame(width: 40, height: 40)
-            List {
-                HStack {
-                    Text("Terminus")
-                        .font(.headline)
-                    Spacer()
-                    Text("Temps d'attente")
-                        .font(.headline)
-                }
-                ForEach(viewModel.scheds11) { sched in
-                    HStack {
-                        Text("\(sched.destination)")
-                        Spacer()
-                        Text("\(sched.message)")
-                            .foregroundColor(Color.yellow)
-                            .padding(.all)
-                            .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
-                    }
-                }
-            }
+            .listStyle(PlainListStyle())
             .padding()
             
+            Image("Metro11")
+                .resizable()
+                .frame(width: 35, height: 35)
+            
+                List {
+                    
+                        HStack {
+                            Text("Terminus")
+                                .font(.headline)
+                            Spacer()
+                            Text("Temps d'attente")
+                                .font(.headline)
+                        }
+                        ForEach(viewModel.scheds11) { sched in
+                            HStack {
+                                Text("\(sched.destination)")
+                                Spacer()
+                                Text("\(sched.message)")
+                                    .foregroundColor(Color.yellow)
+                                    .padding(.all)
+                                    .background(RoundedRectangle(cornerRadius: 12).fill(Color.black))
+                            }
+                        }
+                }
+                .listStyle(PlainListStyle())
+                .padding()
+            /*
             Button(action: {
                 viewModel.load(line: "4")
                 viewModel.load(line: "11")
@@ -66,8 +71,9 @@ struct RetourView: View {
                 Image(systemName: "arrow.2.circlepath")
                     .resizable()
             }
-            .frame(width: 60, height: 60)
+            .frame(width: 50, height: 50)
             .padding()
+            */
         }
         .onAppear() {
             viewModel.load(line: "4")

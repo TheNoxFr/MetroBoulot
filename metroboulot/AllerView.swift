@@ -34,16 +34,19 @@ struct AllerView: View {
                     }
                 }
             }
+            .listStyle(PlainListStyle())
             .padding()
             .onAppear(perform: {viewModel.load(line: "96")})
+            /*
             Button(action: {
                 viewModel.load(line: "96")
             }) {
                 Image(systemName: "arrow.2.circlepath")
                     .resizable()
             }
-            .frame(width: 60, height: 60)
+            .frame(width: 50, height: 50)
             .padding()
+             */
         }
     }
 }
