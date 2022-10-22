@@ -10,9 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewModel: ViewModel
     @State private var tabSelection = 1
-    // 96 : https://api-ratp.pierre-grimaud.fr/v4/schedules/buses/96/Maison%20des%20m%C3%A9tallos/R
-    //  4 : https://api-ratp.pierre-grimaud.fr/v4/schedules/metros/4/montparnasse+bienvenue//R
-    // 11 : https://api-ratp.pierre-grimaud.fr/v4/schedules/metros/11/chatelet/R
+    
     var body: some View {
         TabView (selection: $tabSelection) {
             AllerView(viewModel: viewModel)

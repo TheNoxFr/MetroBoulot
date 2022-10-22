@@ -15,12 +15,12 @@ struct ContentView: View {
     // 11 : https://api-ratp.pierre-grimaud.fr/v4/schedules/metros/11/chatelet/R
     var body: some View {
         TabView (selection: $tabSelection) {
-            AllerView()
+            AllerView(viewModel: viewModel)
                 .tabItem {
                     Label("Aller", systemImage: "car")
                 }
                 .tag(1)
-            RetourView()
+            RetourView(viewModel: viewModel)
                 .tabItem {
                     Label("Retour", systemImage: "tram")
                 }
@@ -31,7 +31,7 @@ struct ContentView: View {
             let now = Date()
             let calendar = Calendar.current
             let hour = calendar.component(.hour, from: now)
-            if hour >= 23 {
+            if hour >= 13 {
                 tabSelection = 2
             } else {
                 tabSelection = 1
