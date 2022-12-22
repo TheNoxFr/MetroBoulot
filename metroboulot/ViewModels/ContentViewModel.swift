@@ -45,7 +45,9 @@ class ViewModel : ObservableObject {
                         let dateFormaterPassage = DateFormatter()
                         dateFormaterPassage.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
                             
-                        let responseTimestamp = dateFormaterResponse.date(from:  decodedResponse.Siri.ServiceDelivery.ResponseTimestamp)
+                        //let responseTimestamp = dateFormaterResponse.date(from:  decodedResponse.Siri.ServiceDelivery.ResponseTimestamp)
+                        let responseTimestamp = dateFormaterResponse.date(from: ISO8601DateFormatter().string(from: Date.now))
+                        
                         let monitoredStopVisit = decodedResponse.Siri.ServiceDelivery.StopMonitoringDelivery[0].MonitoredStopVisit
                             
                         var dest1: String = ""
